@@ -1,0 +1,107 @@
+/** Cascating Stylesheet -> CSS */
+*{ /** seletor universal*/
+  margin: 0; /** margem zero*/
+} 
+
+@media (min-width: 720px) {
+	/* estilos versão tablet */
+}
+
+@media (min-width: 960px) {
+	/* estilos versão desktop */
+}
+
+html,
+body {
+
+  --grey: hsl(240, 9%, 89%); /**para as cores greys, usarei a variável --gray*/
+  --black: hsl(240, 6%, 13%);
+
+
+  height: 100%; /** altura */
+  font-family: 'Roboto', sans-serif; /**fonte Roboto, se não achar, será a fonte sans-serif*/
+  -webkit-font-smoothing: antialiased; /**fonte smoothing funcionará em navegadores que tenham fonte webkit*/
+}
+
+body {
+  display: grid; /** organizar */
+  place-items: center; /** centralizar */
+}
+
+main {
+  background: url(images/background.svg) no-repeat center/cover; /**nao repetiu a imagem branca de fundo, fixou o background (cover) e centralizou*/
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+
+.container{
+  max-width: 250px; /**largura máxima*/
+  margin-left: auto; /**margem à esquerda automática*/
+  margin-right: auto; /**margem à direita automática*/
+  text-align: center; /**texto alinhado no centro*/
+
+  color: var(--grey);
+}
+.avatar{
+  width: 10rem; /**tamanho*/
+  margin: 10rem auto; /**alinhar*/
+
+  position: relative; /**ele é o limite*/
+}
+
+.avatar span{
+  position: absolute; /**sobreposição na pagina inteira*/
+  top: -15px;
+  z-index: 1; /**para manter a sobreposição*/
+}
+
+.avatar > img{ /**o sinal > significa que irá procurar a imagem que está no primeiro nivel. sem o sinal, ele pega todas as img*/
+  width: 10rem; /**largura de 10rem*/
+  height: 11.5rem; /**altura de 11.5rem*/
+  object-fit: cover; /**proporção correta que preenche de maneira certa*/
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); /**formato da imagem - polígono - site: https://bennettfeely.com/clippy/*/
+}
+
+h1 {
+  font-size: 1.5rem; /** tamanho */
+  margin-top: 1.5rem;
+}
+
+a {
+  margin-top: 0.25rem;
+}
+
+a {
+  color: var(--grey); /** cor da referencia */
+  text-decoration: none; /** decoração do texo */
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+
+  /**tudo comentado abaixo*/
+}
+
+p{
+  margin-top: 2rem;
+}
+
+ul{
+  margin-top: 4rem;
+
+  list-style: none; /**sem simbolos de organização*/
+  padding: 0; /**preenchimento interno*/
+  display: flex; /**elementos ficam um ao lado do outro*/
+  
+  /** PODERIA SER EM COLUNAS
+  flex-direction: column;
+  */
+  
+  gap: 0.5rem; /**espaço entre os elementos*/
+  justify-content: center; /**centralizando conteudo*/
+}

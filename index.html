@@ -1,0 +1,87 @@
+<!--
+  HTML
+  HyperText - > texto com links
+  
+  Markup -> Marcação/Tags
+  
+  Language -> Regras de linguagem/Sintaxe 
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Victor Emanuel - DoWhile 2022</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!--fazendo referencia ao arquivo css style-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <div class="avatar">
+          <span>
+            <img src="images/build.svg" alt="Selo Rocketseat" />
+          </span>
+          <img
+            id="userAvatar"
+            src="https://progsoft.net/images/placekitten-icon-68d5c7a460d9d7bbc75d3ccb171ae2ccdea39408.jpg"
+            alt="Foto do usuário"
+          />
+        </div>
+
+        <h1 id="userName">Victor Emanuel</h1>
+        <a id="UserId">020202</a>
+
+        <!--Texto-->
+        <a id="userLink" href="https://github.com/" target="_blank">
+          <img src="images/github.svg" alt="ícone Github" />
+          <span id="userLogin">VictorEmanuel</span>
+          <!--texto que não é parágrafo-->
+        </a>
+        <!-- a = atribuição será feita 
+            href = atributo -> referencia - linkar 
+            "(conteudi=o) = valor do atributo"-->
+
+        <p id="UserBio">"Um aluno focado em aprender programação Web</p>
+        <!-- paragrafo -->
+
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src="images/youtube.svg" alt="ícone youtube" />
+            </a>
+          </li>
+          <li class="instagram">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="images/instagram.svg" alt="icone instagram" />
+            </a>
+          </li>
+          <li class="facebook">
+            <a href="https://pt-br.facebook.com/" target="_blank">
+              <img src="images/facebook.svg" alt="icone facebook" />
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="https://twitter.com/" target="_blank">
+              <img src="images/twitter.svg" alt="icone twitter" />
+            </a>
+          </li>
+        </ul>
+        <!--ul = lista não ordenada
+        li = tag-->
+      </div>
+      <!--criar uma caixa-->
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
